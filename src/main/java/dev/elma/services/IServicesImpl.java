@@ -1,8 +1,12 @@
 package dev.elma.services;
 
 import dev.elma.dao.IDAO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component("serviceImp")
 public class IServicesImpl implements IServices{
+    @Autowired
     IDAO dao;
     @Override
     public double calculate() {
