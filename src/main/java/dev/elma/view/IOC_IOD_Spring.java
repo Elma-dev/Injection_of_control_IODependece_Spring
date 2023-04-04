@@ -11,5 +11,6 @@ public class IOC_IOD_Spring {
         ApplicationContext applicationContext=new FileSystemXmlApplicationContext("configSp.xml");
         //getBeans ==> getObject that's have 'service1' as Name
         IServices service=(IServices) applicationContext.getBean("service1");
+        System.out.println(service.calculate());
     }
 }
